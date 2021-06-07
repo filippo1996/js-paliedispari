@@ -32,7 +32,11 @@ function promtStr(text){
        if(word && word.length < 3){
             word = ''; 
             alert('inserisci una parola più lunga');
-       }
+        }
+        if(word && !isNaN(word)){
+            word = ''; 
+            alert('Non puoi inserire caratteri numerici');
+        }
     }
     return word;
 }
@@ -49,3 +53,7 @@ function reverseWord(str){
     }
     return reverseStr;
 }
+
+
+
+
